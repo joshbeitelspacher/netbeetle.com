@@ -1,0 +1,21 @@
+---
+layout: default
+title: netbeetle.com
+---
+
+{% if site.posts.size > 0 %}
+<h1>Posts</h1>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<h1>Publications</h1>
+<ul class="publications">
+  <li>Beitelspacher, Josh (2006).  <a href="/pub/implicit-robot-localization-through-prediction.pdf">Implicit Robot Localization through Prediction</a>.  Master's thesis.  University of Oklahoma, School of Computer Science.</li>
+  <li>Beitelspacher, Josh and Fager, Jason and Henriques, Greg and McGovern, Amy (2006).  <a href="/pub/policy-gradient-vs-value-fuction-approximation-a-reinforcement-learning-shootout.pdf">Policy Gradient vs. Value Function Approximation: A Reinforcement Learning Shootout</a>.  University of Oklahoma, School of Computer Science, Technical Report CS-TR-06-001.</li>
+  <li>Beitelspacher, Josh (2005).  <a href="/pub/applying-reinforcement-learning-to-obstacle-avoidance.pdf">Applying Reinforcement Learning to Obstacle Avoidance</a>.  Final paper for CS 5973.  University of Oklahoma, School of Computer Science.</li>
+  <li>Beitelspacher, Josh (2002).  <a href="/pub/computer-science-and-intellectual-property.pdf">Computer Science and Intellectual Property</a>.  University of Oklahoma Honors Undergraduate Research Journal.</li>
+</ul>
